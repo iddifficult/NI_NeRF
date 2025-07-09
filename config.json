@@ -1,0 +1,22 @@
+{
+	"file": {
+		"in_dir": "/data/zhuoweixu/Miracle/Project/GSlikeNAF/Train_data/GS_head.pickle",
+		"model_dir": "checkpoint",
+		"out_dir": "result",
+		"check_point":"model/pretrain/pretrain_naf_ln_GeLU_sp.pkl",
+		"name": "test"
+	},
+	"train": {
+		"gpu": 5,
+		"lr": 1e-3,
+		"epoch": 3000,
+		"save_epoch": 100,
+		"num_sample_ray": 1024,
+		"num_sample_point": 320,
+		"lr_decay_epoch": 3000,
+		"lr_decay_coefficient": 0.1,
+		"batch_size": 1,
+		"visualize": 1,
+		"visualize_epoch": 20
+	}
+}
