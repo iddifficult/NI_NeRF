@@ -1,13 +1,13 @@
 {
 	"file": {
-		"in_dir": "/data/zhuoweixu/Miracle/Project/GSlikeNAF/Train_data/GS_head.pickle",
+		"in_dir": "yourdata.pickle",
 		"model_dir": "checkpoint",
 		"out_dir": "result",
-		"check_point":"model/pretrain/pretrain_naf_ln_GeLU_sp.pkl",
+		"check_point":"YourPretrainModel.pkl",
 		"name": "test"
 	},
 	"train": {
-		"gpu": 5,
+		"gpu": 0,
 		"lr": 1e-3,
 		"epoch": 3000,
 		"save_epoch": 100,
