@@ -62,7 +62,7 @@ mask = torch.ones((1,20)).cuda()
 # initialize NeuralNetwork
 if os.path.exists(config['file']['check_point']):
         NeRF.load_state_dict(torch.load(config['file']['check_point']), strict=False) # load weights
-        NeRF.encoder = HashEncoder(input_dim=3, num_levels=10, level_dim=8, base_resolution=16, log2_hashmap_size=19).cuda() # reinitialize hashencoder
+        NeRF.encoder = HashEncoder(input_dim=3, num_levels=10, level_dim=2, base_resolution=16, log2_hashmap_size=19).cuda() # reinitialize hashencoder
         print('initialize success')
 else:
        print('haven\'t find pretrain weights')
